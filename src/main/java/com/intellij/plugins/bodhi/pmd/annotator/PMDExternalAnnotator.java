@@ -95,8 +95,8 @@ public class PMDExternalAnnotator extends ExternalAnnotator<FileInfo, PMDAnnotat
     private TextFile asTextFile(FileInfo info) {
         return new StringTextFile(
                 info.getDocument().getText(),
-                info.getFile().getAbsolutePath(),
-                info.getFile().getName(),
+                info.getFileName(),
+                info.getFileName(),
                 info.getLanguageVersion()
         );
     }
